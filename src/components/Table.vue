@@ -81,6 +81,7 @@ const columns: TableColumn<Task>[] = [
           class: 'cursor-pointer text-blue-500',
           variant: 'ghost',
           icon: 'i-heroicons-pencil-square',
+          'aria-label': "Edit",
           onClick: () => emit('edit-task', row.original),
         }),
         h(UButton, {
