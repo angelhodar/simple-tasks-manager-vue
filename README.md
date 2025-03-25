@@ -64,6 +64,8 @@ Follow these steps to get the project running locally:
    npm run test:unit
    ```
 
+   > Unit tests cant be executed at the moment because of an [issue](https://github.com/nuxt/ui/issues/3213) with Nuxt UI. It could be solved by moving the UI library to something like [shadcn-vue](https://www.shadcn-vue.com/docs/installation/vite.html), which is also based on Tailwind (no v4 support at the moment) and Reka-UI.
+
 * **Run end-to-end tests with Cypress in development mode (against the dev server):**
    ```sh
    npm run test:e2e:dev
@@ -78,6 +80,5 @@ Follow these steps to get the project running locally:
 
 ### Observations and areas of improvements
 
-1. Unit tests cant be executed at the moment because of an [issue](https://github.com/nuxt/ui/issues/3213) with Nuxt UI.
-2. Pagination state should be handled in URL for better link sharing. I already did that for React in this [blog post](https://angelhodar.com/blog/reusable-usequeryparams-hook-nextjs-validation-zod)
-3. When performing any action over a task, it is always recommended to add an extra confirmation step dialog.
+1. Pagination state could be handled in URL for better link sharing. I already did that for React in this [blog post](https://angelhodar.com/blog/reusable-usequeryparams-hook-nextjs-validation-zod)
+2. When performing any action over a task, it is always recommended to add an extra confirmation step dialog.
